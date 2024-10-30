@@ -78,9 +78,9 @@ function actualizarTotales() {
   let totalAPagar = subtotal - ahorro;
 
   totalProductosDisplay.textContent = `Total productos: ${totalProductos}`;
-  subtotalDisplay.textContent = `Subtotal: $${subtotal}`;
+  subtotalDisplay.textContent = `Subtotal: $${subtotal.toFixed(2)}`;
   ahorroDisplay.textContent = `Ahorro: $${ahorro}`;
-  totalPagarDisplay.textContent = `Total a pagar: $${totalAPagar}`;
+  totalPagarDisplay.textContent = `Total a pagar: $${totalAPagar.toFixed(2)}`;
 }
 
 botonesIzquierda.forEach((boton, index) => {
